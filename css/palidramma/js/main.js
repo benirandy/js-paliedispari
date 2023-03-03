@@ -3,12 +3,15 @@ console.log('hai scritto: ' + word);
 
 let lettaAlcontrario = (reverseString(word));
 
-if (word == lettaAlcontrario) {
+if (word % 2
+   == lettaAlcontrario) {
    console.log('The word written is a palindrome')
 } else {
    console.log('The word written is not a palindrome')
 }
 
+
+
 function reverseString(str) {
-   return str.split('').reverse('word').join('');
+   return str.split('').reverse('').join('');
 }
